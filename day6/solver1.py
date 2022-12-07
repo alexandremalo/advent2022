@@ -5,7 +5,6 @@ def first_four_diff_char_position(radio_signal):
         found_duplicated = False
         char_set = {}
         for x in range(4):
-            #print(radio_signal[char_index - x])
             if char_set.get(radio_signal[char_index - x], 0) != 0:
                 found_duplicated = True
             char_set[radio_signal[char_index - x]] = 1
